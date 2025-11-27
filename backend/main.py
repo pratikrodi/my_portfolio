@@ -103,59 +103,50 @@ async def delete_message(message_id: int):
     return {"status": "deleted", "id": message_id}
 
 # Optional: Email notification function
+import requests
+
 def send_email_notification(contact: ContactMessage):
-    """Send email notification when someone submits the contact form."""
-    
-    # Get email configuration from environment variables
-    SMTP_SERVER = "smtp.gmail.com"
-    SMTP_PORT = 587
-    SENDER_EMAIL = os.getenv("GMAIL_EMAIL")
-    SENDER_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+    """Send email using Brevo API (Works on Render, no SMTP needed)."""
+
+    BREVO_API_KEY = os.getenv("BREVO_API_KEY")
     RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL")
-    
-    if not all([SENDER_EMAIL, SENDER_PASSWORD, RECIPIENT_EMAIL]):
-        print("❌ Email configuration missing in .env file")
+
+    if not BREVO_API_KEY or not RECIPIENT_EMAIL:
+        print("❌ Missing BREVO_API_KEY or RECIPIENT_EMAIL in environment variables")
         return
-    
-    try:
-        # Create message
-        msg = MIMEMultipart()
-        msg['From'] = SENDER_EMAIL
-        msg['To'] = RECIPIENT_EMAIL
-        msg['Subject'] = f"Portfolio Contact: {contact.name}"
-        msg['Reply-To'] = contact.email
-        
-        # Email body
-        body = f"""
-        ========================================
-        NEW CONTACT FORM SUBMISSION
-        ========================================
-        
-        FROM: {contact.name}
-        EMAIL: {contact.email}
-        
-        ----------------------------------------
-        MESSAGE:
-        ----------------------------------------
-        {contact.message}
-        
-        ----------------------------------------
-        
-        To reply, just click "Reply" in your email client.
+
+    email_data = {
+        "sender": {"name": "Portfolio Contact", "email": RECIPIENT_EMAIL},
+        "to": [{"email": RECIPIENT_EMAIL}],
+        "subject": f"New Portfolio Message from {contact.name}",
+        "htmlContent": f"""
+            <h3>New Contact Form Submission</h3>
+            <p><strong>Name:</strong> {contact.name}</p>
+            <p><strong>Email:</strong> {contact.email}</p>
+            <p><strong>Message:</strong></p>
+            <p>{contact.message}</p>
         """
-        
-        msg.attach(MIMEText(body, 'plain'))
-        
-        # Send email
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()
-            server.login(SENDER_EMAIL, SENDER_PASSWORD)
-            server.send_message(msg)
-            
-        print(f"✅ Email sent successfully from {contact.name}")
-        
+    }
+
+    try:
+        response = requests.post(
+            "https://api.brevo.com/v3/smtp/email",
+            headers={
+                "accept": "application/json",
+                "api-key": BREVO_API_KEY,
+                "content-type": "application/json"
+            },
+            json=email_data
+        )
+
+        if response.status_code == 201:
+            print("✅ Email sent successfully via Brevo")
+        else:
+            print("❌ Email failed:", response.text)
+
     except Exception as e:
-        print(f"❌ Failed to send email: {str(e)}")
+        print(f"❌ Email error: {str(e)}")
+
 
 # Run with: uvicorn main:app --reload
 if __name__ == "__main__":

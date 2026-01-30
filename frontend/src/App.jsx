@@ -53,9 +53,10 @@ export default function Portfolio() {
 
   const skills = {
     'Frontend': ['React.js', 'JavaScript', 'HTML/CSS'],
-    'Backend': ['Node.js', 'Python', 'FastAPI', 'Django', 'PHP'],
+    'Backend': ['Node.js', 'Python', 'FastAPI'],
     'Database': ['SQL', 'MongoDB'],
-    'Cloud & DevOps': ['AWS EC2', 'S3', 'IAM', 'CloudWatch', 'SNS', 'Jenkins'],
+    'Cloud': ['AWS EC2', 'S3', 'IAM', 'CloudWatch', 'SNS', 'Jenkins'],
+    'DevOps': ['Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Ansible'],
     'Tools': ['Git', 'GitHub']
   };
 
@@ -98,7 +99,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">

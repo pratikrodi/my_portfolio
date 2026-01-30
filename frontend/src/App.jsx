@@ -62,6 +62,18 @@ export default function Portfolio() {
   const experience = [
     {
       title: 'Full Stack Developer',
+      company: 'Matfly Solutions',
+      period: '05/2025 - Present',
+      location: 'Pune, India',
+      achievements: [
+        'Building and maintaining full-stack web applications across frontend and backend.',
+        'Integrating APIs and databases to ensure smooth data flow.',
+        'Deploying and managing applications on AWS (EC2, S3, IAM, VPC, RDS, Route 53) for scalability and reliability.',
+        'Monitoring systems using CloudWatch logs, metrics, and alarms to ensure optimal performance.'
+      ]
+    },
+    {
+      title: 'Full Stack Developer',
       company: 'Acute Solution Pvt. Ltd.',
       period: '02/2024 - 04/2025',
       location: 'Pune, India',
@@ -122,9 +134,10 @@ export default function Portfolio() {
           </h1>
           <h2 className="text-3xl text-cyan-400 mb-6">Full Stack Developer</h2>
           <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Results-driven Full Stack Developer experienced in building scalable web applications, 
-            designing REST APIs, implementing authentication, and creating responsive UIs. 
-            Hands-on with AWS services like EC2, S3, and CloudWatch.
+           Full Stack Developer with experience building frontend and backend web applications, 
+           integrating APIs, and working with databases. Skilled in deploying and supporting applications on AWS, 
+           with working knowledge of Linux, monitoring, and troubleshooting . Familiar with DevOps basics including 
+           Docker - Kubernetes, Jenkins, Terraform , and Ansible , and focused on delivering scalable, reliable solutions.
           </p>
           <div className="flex gap-4 justify-center mb-8">
             <a href="mailto:prateekrodi@gmail.com" className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors">

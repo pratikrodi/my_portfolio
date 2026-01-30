@@ -157,7 +157,7 @@ export default function Portfolio() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="section-title">
+      <section id="about" className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="section-title">About Me</h2>
           <div className={cardStyle + ' p-8'}>
@@ -187,7 +187,7 @@ export default function Portfolio() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" className="section-title">
+      <section id="experience" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title">Experience</h2>
           <div className="space-y-8">
@@ -216,7 +216,7 @@ export default function Portfolio() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="section-title">
+      <section id="projects" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title">Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -243,7 +243,7 @@ export default function Portfolio() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="section-title">
+      <section id="skills" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title">Skills</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -267,7 +267,7 @@ export default function Portfolio() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="section-title">
+      <section id="contact" className="py-24 px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="section-title">Contact</h2>
           <div className={cardStyle + ' p-8'}>

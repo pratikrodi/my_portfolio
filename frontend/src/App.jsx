@@ -36,6 +36,30 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: 'Cloud-Native Appointment & Billing Platform',
+      subtitle: 'Full Stack Application with AWS Cloud & DevOps Automation',
+      tech: 'React, Node.js, AWS, CI/CD, Terraform, Docker',
+      description:
+        'Designed and developed a cloud-native appointment and billing platform with end-to-end ownership across application development, cloud deployment, and DevOps automation. Implemented CI/CD pipelines and AWS-based infrastructure to improve scalability, reliability, and deployment efficiency.',
+      highlights: [
+        'End-to-end Full Stack + DevOps ownership',
+        'Automated CI/CD pipelines',
+        'AWS cloud deployment with monitoring'
+      ]
+    },
+    {
+      title: 'AWS Monitoring Dashboard for Auto-Scaling Web Application',
+      subtitle: 'AWS Cloud Monitoring & Reliability Engineering Project',
+      tech: 'AWS EC2, ALB, Auto Scaling, CloudWatch, SNS',
+      description:
+        'Architected and monitored an auto-scaling web application on AWS using CloudWatch metrics, logs, dashboards, and alarms. Implemented proactive alerting and auto-scaling policies to ensure high availability and system reliability.',
+      highlights: [
+        'Real-time monitoring & alerting',
+        'Auto Scaling & high availability',
+        'CloudWatch dashboards & alarms'
+      ]
+    },
+    {
       title: 'Finanza',
       subtitle: 'Financial Advisory Appointment Booking System',
       tech: 'MERN Stack',
@@ -52,25 +76,44 @@ export default function Portfolio() {
   ];
 
   const skills = {
-    'Frontend': ['React.js', 'JavaScript', 'HTML/CSS'],
-    'Backend': ['Node.js', 'Python', 'FastAPI'],
-    'Database': ['SQL', 'MongoDB'],
-    'Cloud': ['AWS EC2', 'S3', 'IAM', 'CloudWatch', 'SNS', 'Jenkins'],
-    'DevOps': ['Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Ansible'],
-    'Tools': ['Git', 'GitHub']
-  };
+  Frontend: ['React.js', 'JavaScript', 'HTML', 'CSS'],
+  Backend: ['Node.js', 'REST APIs', 'Python'],
+  Database: ['MySQL', 'MongoDB'],
+  Cloud: [
+    'AWS EC2',
+    'S3',
+    'IAM',
+    'VPC',
+    'RDS',
+    'ALB',
+    'Auto Scaling',
+    'CloudWatch',
+    'SNS'
+  ],
+  DevOps: [
+    'CI/CD',
+    'Jenkins',
+    'GitHub Actions',
+    'Docker',
+    'Kubernetes',
+    'Terraform',
+    'Ansible'
+  ],
+  Monitoring: ['AWS CloudWatch', 'Logs', 'Metrics', 'Alarms', 'Dashboards'],
+  Tools: ['Git', 'GitHub', 'Linux', 'YAML', 'JSON']
+};
 
   const experience = [
     {
-      title: 'Full Stack Developer',
+      title: 'Full Stack Developer(AWS/Devops)',
       company: 'Matfly Solutions',
       period: '05/2025 - Present',
       location: 'Pune, India',
       achievements: [
         'Building and maintaining full-stack web applications across frontend and backend.',
         'Integrating APIs and databases to ensure smooth data flow.',
-        'Deploying and managing applications on AWS (EC2, S3, IAM, VPC, RDS, Route 53) for scalability and reliability.',
-        'Monitoring systems using CloudWatch logs, metrics, and alarms to ensure optimal performance.'
+        'Built and maintained CI/CD pipelines using Jenkins and GitHub Actions to automate build and deployment workflows.',
+        'Deployed and managed applications on AWS using EC2, S3, IAM, VPC, RDS, and Route 53.'
       ]
     },
     {
@@ -133,12 +176,12 @@ export default function Portfolio() {
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Pratik Rodi
           </h1>
-          <h2 className="text-3xl text-cyan-400 mb-6">Full Stack Developer</h2>
+          <h2 className="text-3xl text-cyan-400 mb-6">Full Stack Developer(AWS/Devops)</h2>
           <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-           Full Stack Developer with experience building frontend and backend web applications, 
-           integrating APIs, and working with databases. Skilled in deploying and supporting applications on AWS, 
-           with working knowledge of Linux, monitoring, and troubleshooting . Familiar with DevOps basics including 
-           Docker - Kubernetes, Jenkins, Terraform , and Ansible , and focused on delivering scalable, reliable solutions.
+           Full Stack Developer with strong hands-on experience across application development and AWS Cloud
+& DevOps practices. Experienced in designing, building, deploying, and operating scalable applications
+using CI/CD automation, Infrastructure as Code, containerization, and monitoring. Adept at working
+across the full software development lifecycle in Agile, consulting-driven environments.
           </p>
           <div className="flex gap-4 justify-center mb-8">
             <a href="mailto:prateekrodi@gmail.com" className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors">
@@ -177,9 +220,9 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
           <div className="bg-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              I'm a passionate Full Stack Developer with a Master's in Computer Applications and over a year of 
+              I'm a passionate Full Stack Developer(AWS/Devops) with a Master's in Computer Applications and over a year of 
               professional experience building enterprise-level applications. My expertise spans across modern 
-              web technologies, cloud infrastructure, and software quality assurance.
+              web technologies and cloud infrastructure.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
               I specialize in creating scalable, performant web applications using React, Node.js, Python, and 

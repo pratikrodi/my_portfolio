@@ -36,7 +36,7 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Cloud-Native Appointment & Billing Platform',
+      title: 'Cloud-Native Appointment Platform',
       subtitle: 'Full Stack Application with AWS Cloud & DevOps Automation',
       tech: 'React, Node.js, AWS, CI/CD, Terraform, Docker',
       description:
@@ -76,20 +76,6 @@ export default function Portfolio() {
   ];
 
   const skills = {
-  Frontend: ['React.js', 'JavaScript', 'HTML', 'CSS'],
-  Backend: ['Node.js', 'REST APIs', 'Python'],
-  Database: ['MySQL', 'MongoDB'],
-  Cloud: [
-    'AWS EC2',
-    'S3',
-    'IAM',
-    'VPC',
-    'RDS',
-    'ALB',
-    'Auto Scaling',
-    'CloudWatch',
-    'SNS'
-  ],
   DevOps: [
     'CI/CD',
     'Jenkins',
@@ -99,22 +85,75 @@ export default function Portfolio() {
     'Terraform',
     'Ansible'
   ],
-  Monitoring: ['AWS CloudWatch', 'Logs', 'Metrics', 'Alarms', 'Dashboards'],
-  Tools: ['Git', 'GitHub', 'Linux', 'YAML', 'JSON']
+
+  Cloud: [
+    'AWS EC2',
+    'S3',
+    'IAM',
+    'VPC',
+    'RDS',
+    'EKS',
+    'ALB',
+    'Auto Scaling',
+    'CloudWatch'
+  ],
+
+  Backend: [
+    'Node.js',
+    'Express.js',
+    'REST APIs',
+    'Python'
+  ],
+
+  Frontend: [
+    'React.js',
+    'JavaScript',
+    'HTML',
+    'CSS'
+  ],
+
+  Database: [
+    'MongoDB',
+    'MySQL'
+  ],
+
+  Monitoring: [
+    'AWS CloudWatch',
+    'Logs',
+    'Metrics',
+    'Alarms',
+    'Dashboards'
+  ],
+
+  Tools: [
+    'Git',
+    'GitHub',
+    'Linux',
+    'YAML'
+  ]
 };
 
   const experience = [
     {
-      title: 'Full Stack Developer(AWS/Devops)',
+      title: 'Devops Engineer',
       company: 'Matfly Solutions',
       period: '05/2025 - Present',
       location: 'Pune, India',
       achievements: [
-        'Building and maintaining full-stack web applications across frontend and backend.',
-        'Integrating APIs and databases to ensure smooth data flow.',
-        'Built and maintained CI/CD pipelines using Jenkins and GitHub Actions to automate build and deployment workflows.',
-        'Deployed and managed applications on AWS using EC2, S3, IAM, VPC, RDS, and Route 53.'
-      ]
+  'Designed and deployed scalable AWS infrastructure (EC2, VPC, ALB, RDS, Auto Scaling) supporting highly available production workloads.',
+  
+  'Built and maintained CI/CD pipelines using Jenkins, reducing manual deployment effort by 60% and accelerating release cycles.',
+  
+  'Automated infrastructure provisioning using Terraform, enabling consistent and version-controlled deployments.',
+  
+  'Implemented monitoring and alerting using AWS CloudWatch dashboards, logs, and alarms to proactively detect and resolve system issues.',
+  
+  'Implemented load balancing and auto-scaling strategies to improve system reliability and support dynamic traffic patterns.',
+  
+  'Developed Python and Bash scripts to automate operational tasks and log analysis.',
+  
+  'Collaborated with development teams to optimize deployment workflows and improve production stability.'
+]
     },
     {
       title: 'Full Stack Developer',
@@ -122,11 +161,16 @@ export default function Portfolio() {
       period: '02/2024 - 04/2025',
       location: 'Pune, India',
       achievements: [
-        'Optimized ERP platform performance by 25% using PHP, HTML, CSS, React and JavaScript',
-        'Improved inventory workflow accuracy by 30% through enhanced data validation',
-        'Implemented SEO strategies, increasing organic website traffic by 20%',
-        'Reduced defects by 15% and improved load time by 20% through comprehensive testing'
-      ]
+  'Optimized ERP platform performance by 25% using PHP, HTML, CSS, React and JavaScript while supporting deployments on AWS-hosted environments.',
+  
+  'Improved inventory workflow accuracy by 30% through enhanced data validation and backend logic improvements.',
+  
+  'Implemented SEO strategies, increasing organic website traffic by 20% and improving application visibility.',
+  
+  'Monitored and analyzed application logs and performance metrics on AWS CloudWatch to support system reliability and debugging.',
+  
+  'Reduced defects by 15% and improved load time by 20% through comprehensive testing and performance optimization.'
+]
     },
     {
       title: 'Full Stack Developer Intern',

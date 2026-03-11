@@ -215,7 +215,7 @@ export default function Portfolio() {
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-cyan-500">
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Pratik Rodi"
                 className="w-full h-full object-cover"
               />

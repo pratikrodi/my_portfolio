@@ -213,8 +213,12 @@ export default function Portfolio() {
       <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-4xl text-center">
           <div className="mb-6">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-5xl font-bold mb-6">
-              PR
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-cyan-500">
+              <img
+                src="/profile.jpg"
+                alt="Pratik Rodi"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">

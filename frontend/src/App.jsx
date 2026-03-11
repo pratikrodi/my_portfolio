@@ -220,12 +220,12 @@ export default function Portfolio() {
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Pratik Rodi
           </h1>
-          <h2 className="text-3xl text-cyan-400 mb-6">Full Stack Developer(AWS/Devops)</h2>
+          <h2 className="text-3xl text-cyan-400 mb-6">Devops Engineer</h2>
           <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-           Full Stack Developer with strong hands-on experience across application development and AWS Cloud
-& DevOps practices. Experienced in designing, building, deploying, and operating scalable applications
-using CI/CD automation, Infrastructure as Code, containerization, and monitoring. Adept at working
-across the full software development lifecycle in Agile, consulting-driven environments.
+           DevOps Engineer with experience in cloud infrastructure, automation, and production support within
+AWS environments. Skilled in designing CI/CD pipelines, implementing Infrastructure as Code, containerization, and improving system reliability through monitoring and automation. Proven ability to
+troubleshoot distributed systems, optimize deployments, and collaborate with cross-functional engineering teams to deliver scalable, secure, and highly available applications in Agile environments.
+
           </p>
           <div className="flex gap-4 justify-center mb-8">
             <a href="mailto:prateekrodi@gmail.com" className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors">

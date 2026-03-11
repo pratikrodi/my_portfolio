@@ -268,14 +268,16 @@ troubleshoot distributed systems, optimize deployments, and collaborate with cro
           <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
           <div className="bg-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              I'm a passionate Full Stack Developer(AWS/Devops) with a Master's in Computer Applications and over a year of 
-              professional experience building enterprise-level applications. My expertise spans across modern 
-              web technologies and cloud infrastructure.
+              I'm a passionate DevOps Engineer with a Master's in Computer Applications and professional experience 
+              working with cloud infrastructure, automation, and modern deployment practices. I focus on building 
+              reliable, scalable, and efficient systems that support high-performance applications in cloud environments.
             </p>
+
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              I specialize in creating scalable, performant web applications using React, Node.js, Python, and 
-              cloud services. I've successfully optimized ERP platforms, improved workflow accuracy, and 
-              implemented SEO strategies that drove significant business results.
+              My expertise includes AWS cloud services, Docker containerization, Kubernetes orchestration, and 
+              infrastructure automation using Terraform and CI/CD pipelines. I enjoy improving system reliability, 
+              optimizing deployment workflows, and enabling development teams to deliver applications faster 
+              and more efficiently.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="flex items-start gap-4">

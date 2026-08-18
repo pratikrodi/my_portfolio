@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# local backend credentials and generated Python files
+backend/firebase_service_account.json
+backend/__pycache__/
+backend/venv/
+backend/.venv/
+
 # vercel
 .vercel
 

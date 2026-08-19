@@ -19,7 +19,7 @@ export default function HomeSection() {
         </div>
         <div className="mt-10 flex gap-5 text-slate-400"><a href="https://github.com" aria-label="GitHub" className="hover:text-[#63e6be]"><FaGithub /></a><a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-[#63e6be]"><FaLinkedinIn /></a><a href="https://twitter.com" aria-label="Twitter" className="hover:text-[#63e6be]"><FaTwitter /></a></div>
       </div>
-      <div className="relative mx-auto w-full max-w-sm">
+      <div className="relative mx-auto w-full max-w-xs">
         <div className="absolute -inset-3 rounded-[2rem] border border-[#63e6be]/20 rotate-6" />
         <Image src="/images/file_000000002988820886422f1a227ff7d6.png" alt="Pratik Rodi" width={520} height={520} priority className="relative aspect-square w-full rounded-[2rem] object-cover grayscale-[15%]" />
         <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/10 bg-[#10243a] px-4 py-3 shadow-xl"><p className="font-mono text-xs text-[#63e6be]">5+ years</p><p className="text-sm text-white">building for the web</p></div>
